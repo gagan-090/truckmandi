@@ -6,7 +6,7 @@ import { PageContainer, Section } from "@/components/layout/page-container";
 const steps = [
   {
     icon: Camera,
-    title: "Add your vehicle",
+    title: "Add your truck",
     body: "Photos, kilometres, registration details and a price. Takes about five minutes.",
   },
   {
@@ -31,7 +31,7 @@ export function SellCta() {
               Sell with TruckMitr
             </p>
             <h2 className="mt-3 font-display text-3xl leading-tight font-extrabold text-balance text-white sm:text-4xl">
-              List your vehicle free. Pay nothing on the sale.
+              List your truck free. Pay nothing on the sale.
             </h2>
             <p className="mt-4 max-w-lg text-base text-pretty text-steel-300">
               No commission, no lead-selling and no hidden charges. Verified

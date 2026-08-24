@@ -19,7 +19,7 @@ const shortcuts = [
   },
   {
     title: "First owner only",
-    caption: "Single-owner vehicles with clean papers",
+    caption: "Single-owner trucks with clean papers",
     href: buildSearchHref("/vehicles", { maxOwners: 1, verifiedOnly: true }),
   },
   {
@@ -50,7 +50,7 @@ export function SmartVehicleFinder() {
       <PageContainer>
         <SectionHeading
           eyebrow="Shortcuts"
-          title="Find the right vehicle faster"
+          title="Find the right truck faster"
           description="Common searches, already filtered. Every shortcut is a normal results page you can refine further."
         />
 

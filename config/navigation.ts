@@ -11,8 +11,8 @@ export interface NavSection {
 
 export const primaryNav: NavItem[] = [
   { label: "Home", href: "/" },
-  { label: "Buy Vehicles", href: "/vehicles" },
-  { label: "Sell Vehicle", href: "/sell" },
+  { label: "Buy Trucks", href: "/vehicles" },
+  { label: "Sell Truck", href: "/sell" },
   { label: "Dealers", href: "/dealers" },
   { label: "Finance", href: "/finance" },
   { label: "Compare", href: "/compare" },
@@ -29,7 +29,7 @@ export const mobileNav: Array<NavItem & { icon: string }> = [
 
 export const accountNav: NavItem[] = [
   { label: "Overview", href: "/account" },
-  { label: "Saved vehicles", href: "/account/saved" },
+  { label: "Saved trucks", href: "/account/saved" },
   { label: "My inquiries", href: "/account/inquiries" },
   { label: "My listings", href: "/account/listings" },
   { label: "Profile", href: "/account/profile" },
@@ -39,12 +39,12 @@ export const footerNav: NavSection[] = [
   {
     label: "Marketplace",
     items: [
-      { label: "All vehicles", href: "/vehicles" },
+      { label: "All trucks", href: "/vehicles" },
       { label: "Used trucks", href: "/vehicles/category/trucks" },
       { label: "Used pickups", href: "/vehicles/category/pickups" },
       { label: "Tippers", href: "/vehicles/category/tippers" },
       { label: "Buses", href: "/vehicles/category/buses" },
-      { label: "Compare vehicles", href: "/compare" },
+      { label: "Compare trucks", href: "/compare" },
     ],
   },
   {
@@ -74,7 +74,7 @@ export const footerNav: NavSection[] = [
     items: [
       { label: "About us", href: "/about" },
       { label: "Contact", href: "/contact" },
-      { label: "Sell your vehicle", href: "/sell" },
+      { label: "Sell your truck", href: "/sell" },
       { label: "Finance", href: "/finance" },
       { label: "Dealer network", href: "/dealers" },
     ],

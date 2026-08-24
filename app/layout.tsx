@@ -24,10 +24,15 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} — Buy & Sell Used Commercial Vehicles in India`,
+    default: `${siteConfig.name} — Buy & Sell Used Commercial Trucks in India`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
   applicationName: siteConfig.name,
   keywords: [
     "used trucks",

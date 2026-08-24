@@ -19,7 +19,7 @@ import { buildMetadata } from "@/lib/seo/metadata";
 import { breadcrumbSchema } from "@/lib/seo/structured-data";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Compare Commercial Vehicles Side by Side",
+  title: "Compare Commercial Trucks Side by Side",
   description:
     "Compare up to four used trucks, pickups or tippers on price, EMI, engine, payload, GVW and verification status before you decide.",
   path: "/compare",
@@ -64,12 +64,12 @@ export default async function ComparePage(props: PageProps<"/compare">) {
 
       <div className="mt-4 mb-6 lg:mb-8">
         <h1 className="font-display text-2xl font-extrabold text-steel-900 sm:text-3xl">
-          Compare vehicles
+          Compare trucks
         </h1>
         <p className="mt-2 max-w-3xl text-sm text-pretty text-steel-600 sm:text-base">
           {vehicles.length > 0
-            ? `Comparing ${vehicles.length} of up to ${MAX_COMPARE_VEHICLES} vehicles. Rows where every vehicle matches are dimmed, so the differences stand out.`
-            : `Pick up to ${MAX_COMPARE_VEHICLES} vehicles from any listing page and compare them on price, EMI, payload, GVW and verification.`}
+            ? `Comparing ${vehicles.length} of up to ${MAX_COMPARE_VEHICLES} trucks. Rows where every truck matches are dimmed, so the differences stand out.`
+            : `Pick up to ${MAX_COMPARE_VEHICLES} trucks from any listing page and compare them on price, EMI, payload, GVW and verification.`}
         </p>
       </div>
 
@@ -80,10 +80,10 @@ export default async function ComparePage(props: PageProps<"/compare">) {
           <EmptyState
             icon={<Scale />}
             title="Nothing to compare yet"
-            description={`Tap the compare icon on any vehicle card to add it here. You can compare up to ${MAX_COMPARE_VEHICLES} vehicles at a time.`}
+            description={`Tap the compare icon on any truck card to add it here. You can compare up to ${MAX_COMPARE_VEHICLES} trucks at a time.`}
             action={
               <Button asChild>
-                <Link href="/vehicles">Browse vehicles</Link>
+                <Link href="/vehicles">Browse trucks</Link>
               </Button>
             }
           />

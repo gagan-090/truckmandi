@@ -53,10 +53,10 @@ export function SearchResults({ query, result }: SearchResultsProps) {
                   <span className="tabular font-semibold text-steel-900">
                     {formatNumber(page.total)}
                   </span>{" "}
-                  vehicles
+                  trucks
                 </>
               ) : (
-                "No matching vehicles"
+                "No matching trucks"
               )}
             </p>
 
@@ -77,7 +77,7 @@ export function SearchResults({ query, result }: SearchResultsProps) {
 
           <p className="mt-2 text-xs text-steel-600 lg:hidden">
             {formatNumber(page.total)}{" "}
-            {page.total === 1 ? "vehicle" : "vehicles"}
+            {page.total === 1 ? "truck" : "trucks"}
           </p>
         </div>
 

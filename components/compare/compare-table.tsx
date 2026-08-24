@@ -29,16 +29,16 @@ export function CompareTable({ vehicles, rows, onRemove }: CompareTableProps) {
 
   return (
     <div className="overflow-x-auto rounded-lg border border-steel-200 bg-white">
-      <table className="w-full min-w-[44rem] border-collapse text-sm">
+      <table className="w-full table-fixed min-w-[52rem] border-collapse text-sm">
         <caption className="sr-only">
-          Specification comparison of {vehicles.length} commercial vehicles
+          Specification comparison of {vehicles.length} commercial trucks
         </caption>
 
         <thead>
           <tr>
             <th
               scope="col"
-              className="sticky left-0 z-10 w-36 border-b border-steel-200 bg-white p-4 text-left align-bottom sm:w-48"
+              className="sticky left-0 z-10 w-36 sm:w-48 border-b border-steel-200 bg-white p-4 text-left align-bottom"
             >
               <span className="text-xs font-bold tracking-[0.1em] text-steel-500 uppercase">
                 Comparing
@@ -49,57 +49,61 @@ export function CompareTable({ vehicles, rows, onRemove }: CompareTableProps) {
               <th
                 key={vehicle.id}
                 scope="col"
-                className="min-w-56 border-b border-l border-steel-200 p-4 text-left align-top"
+                className="w-64 min-w-64 max-w-64 border-b border-l border-steel-200 p-4 text-left align-top h-full"
               >
-                <div className="relative">
-                  <button
-                    type="button"
-                    onClick={() => onRemove(vehicle.id)}
-                    aria-label={`Remove ${vehicle.title} from comparison`}
-                    className="absolute -top-1 -right-1 z-10 grid size-7 place-items-center rounded-full bg-white text-steel-500 shadow-sm transition-colors hover:bg-steel-100 hover:text-steel-900"
-                  >
-                    <X className="size-3.5" />
-                  </button>
+                <div className="relative flex flex-col justify-between h-full min-h-[300px]">
+                  <div>
+                    <button
+                      type="button"
+                      onClick={() => onRemove(vehicle.id)}
+                      aria-label={`Remove ${vehicle.title} from comparison`}
+                      className="absolute -top-1 -right-1 z-10 grid size-7 place-items-center rounded-full bg-white text-steel-500 shadow-sm transition-colors hover:bg-steel-100 hover:text-steel-900 cursor-pointer"
+                    >
+                      <X className="size-3.5" />
+                    </button>
 
-                  <Link
-                    href={`/vehicles/${vehicle.slug}`}
-                    className="group block"
-                  >
-                    <span className="relative block aspect-[4/3] overflow-hidden rounded-md bg-steel-100">
-                      {vehicle.imageUrl && (
-                        <Image
-                          src={vehicle.imageUrl}
-                          alt=""
-                          fill
-                          sizes="240px"
-                          placeholder={vehicle.blurDataURL ? "blur" : "empty"}
-                          blurDataURL={vehicle.blurDataURL}
-                          className="object-cover transition-transform duration-300 group-hover:scale-105"
-                        />
-                      )}
-                    </span>
+                    <Link
+                      href={`/vehicles/${vehicle.slug}`}
+                      className="group block"
+                    >
+                      <span className="relative block h-40 w-full overflow-hidden rounded-md bg-steel-100">
+                        {vehicle.imageUrl && (
+                          <Image
+                            src={vehicle.imageUrl}
+                            alt=""
+                            fill
+                            sizes="260px"
+                            placeholder={vehicle.blurDataURL ? "blur" : "empty"}
+                            blurDataURL={vehicle.blurDataURL}
+                            className="object-cover transition-transform duration-300 group-hover:scale-105"
+                          />
+                        )}
+                      </span>
 
-                    <span className="mt-2.5 flex flex-wrap items-center gap-1.5">
-                      <Badge variant="outline">{vehicle.categoryName}</Badge>
-                      {vehicle.verified && <VerifiedBadge />}
-                    </span>
+                      <span className="mt-2.5 flex flex-wrap items-center gap-1.5">
+                        <Badge variant="outline">{vehicle.categoryName}</Badge>
+                        {vehicle.verified && <VerifiedBadge />}
+                      </span>
 
-                    <span className="mt-1.5 block font-display text-sm leading-snug font-bold text-steel-900 transition-colors group-hover:text-brand-700">
-                      {vehicle.title}
-                    </span>
-                  </Link>
+                      <span className="mt-1.5 block font-display text-sm leading-snug font-bold text-steel-900 transition-colors group-hover:text-brand-700 min-h-[2.5rem] line-clamp-2">
+                        {vehicle.title}
+                      </span>
+                    </Link>
 
-                  <div className="mt-2">
-                    <VehiclePrice
-                      price={vehicle.price}
-                      previousPrice={vehicle.previousPrice}
-                      size="md"
-                    />
+                    <div className="mt-2">
+                      <VehiclePrice
+                        price={vehicle.price}
+                        previousPrice={vehicle.previousPrice}
+                        size="md"
+                      />
+                    </div>
                   </div>
 
-                  <Button asChild size="sm" block className="mt-3">
-                    <Link href={`/vehicles/${vehicle.slug}`}>View listing</Link>
-                  </Button>
+                  <div className="mt-auto pt-3">
+                    <Button asChild size="sm" block>
+                      <Link href={`/vehicles/${vehicle.slug}`}>View listing</Link>
+                    </Button>
+                  </div>
                 </div>
               </th>
             ))}
@@ -108,14 +112,14 @@ export function CompareTable({ vehicles, rows, onRemove }: CompareTableProps) {
               <th
                 key={`empty-${index}`}
                 scope="col"
-                className="min-w-56 border-b border-l border-steel-200 p-4 align-top"
+                className="w-64 min-w-64 max-w-64 border-b border-l border-steel-200 p-4 align-top"
               >
                 <Link
                   href="/vehicles"
-                  className="flex aspect-[4/3] flex-col items-center justify-center gap-2 rounded-md border border-dashed border-steel-300 text-steel-500 transition-colors hover:border-brand-300 hover:bg-brand-50/50 hover:text-brand-700"
+                  className="flex h-40 w-full flex-col items-center justify-center gap-2 rounded-md border border-dashed border-steel-300 text-steel-500 transition-colors hover:border-brand-300 hover:bg-brand-50/50 hover:text-brand-700"
                 >
                   <Plus className="size-5" />
-                  <span className="text-xs font-semibold">Add a vehicle</span>
+                  <span className="text-xs font-semibold">Add a truck</span>
                 </Link>
               </th>
             ))}

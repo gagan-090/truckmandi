@@ -23,7 +23,7 @@ export function VehicleCategories({ counts }: VehicleCategoriesProps) {
       <PageContainer>
         <SectionHeading
           eyebrow="Browse by type"
-          title="Every class of commercial vehicle"
+          title="Every class of commercial truck"
           description="From 500 kg cargo three-wheelers to 49-tonne multi-axle haulage, filtered by the specifications that actually matter."
           action={{ label: "View all categories", href: "/vehicles" }}
         />

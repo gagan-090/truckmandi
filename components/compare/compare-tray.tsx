@@ -33,7 +33,7 @@ export function CompareTray({
     if (index && index[id]) return index[id];
     return {
       id,
-      title: "Commercial Vehicle",
+      title: "Commercial Truck",
       imageUrl: "/images/clean/ashok_leyland_heavy_truck_1787394600402.png",
     };
   });
@@ -41,7 +41,7 @@ export function CompareTray({
   return (
     <div
       role="region"
-      aria-label="Vehicle comparison tray"
+      aria-label="Truck comparison tray"
       className="fixed inset-x-0 bottom-0 z-50 border-t-2 border-brand-600 bg-white/98 shadow-[0_-4px_24px_-4px_rgb(0_0_0/0.2)] backdrop-blur-md transition-all duration-300"
     >
       <div className="mx-auto flex max-w-[1400px] items-center gap-3 px-4 py-2.5 sm:px-6 lg:gap-5 lg:px-8 lg:py-3">

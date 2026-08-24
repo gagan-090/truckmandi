@@ -25,7 +25,7 @@ import { buildMetadata } from "@/lib/seo/metadata";
 import { breadcrumbSchema, faqSchema } from "@/lib/seo/structured-data";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Commercial Vehicle Finance & EMI Calculator",
+  title: "Commercial Truck Finance & EMI Calculator",
   description:
     "Work out the EMI on any used truck, pickup or tipper. Compare down payment, interest rate and tenure, and see the total interest before you commit.",
   path: "/finance",
@@ -40,12 +40,12 @@ const steps = [
   {
     icon: FileText,
     title: "Share your details",
-    body: "Vehicle, price and basic KYC. No documents needed to get an indicative offer.",
+    body: "Truck, price and basic KYC. No documents needed to get an indicative offer.",
   },
   {
     icon: Building2,
     title: "Compare lenders",
-    body: "Banks and NBFCs that lend against commercial vehicles respond with their terms.",
+    body: "Banks and NBFCs that lend against commercial trucks respond with their terms.",
   },
   {
     icon: BadgeCheck,
@@ -63,11 +63,11 @@ const eligibility = [
   {
     icon: Percent,
     label: "Loan to value",
-    value: "Up to 90% of vehicle value",
+    value: "Up to 90% of truck value",
   },
   {
     icon: Clock3,
-    label: "Vehicle age limit",
+    label: "Truck age limit",
     value: "Usually under 10 years at maturity",
   },
   {
@@ -84,22 +84,22 @@ const eligibility = [
 
 const faqs = [
   {
-    question: "Can I get finance on a used commercial vehicle?",
+    question: "Can I get finance on a used commercial truck?",
     answer:
-      "Yes. Most banks and NBFCs lend against used commercial vehicles, typically up to 80–90% of the assessed value. The vehicle usually needs to be under ten years old at the end of the loan tenure, and the lender will value it independently rather than accepting the asking price.",
+      "Yes. Most banks and NBFCs lend against used commercial trucks, typically up to 80–90% of the assessed value. The truck usually needs to be under ten years old at the end of the loan tenure, and the lender will value it independently rather than accepting the asking price.",
   },
   {
     question: "What interest rate should I expect?",
-    answer: `Rates for used commercial vehicles generally start around ${FINANCE_DEFAULTS.interestRate}% per annum and rise with vehicle age and credit risk. First-time buyers without an established transport business usually pay two to four percentage points more than fleet operators with a repayment record.`,
+    answer: `Rates for used commercial trucks generally start around ${FINANCE_DEFAULTS.interestRate}% per annum and rise with truck age and credit risk. First-time buyers without an established transport business usually pay two to four percentage points more than fleet operators with a repayment record.`,
   },
   {
     question: "How much down payment do I need?",
-    answer: `Plan for ${FINANCE_DEFAULTS.downPaymentPercent}% as a working assumption. Lenders often ask for more on older vehicles or from first-time borrowers. A larger down payment lowers both your EMI and the total interest you pay.`,
+    answer: `Plan for ${FINANCE_DEFAULTS.downPaymentPercent}% as a working assumption. Lenders often ask for more on older trucks or from first-time borrowers. A larger down payment lowers both your EMI and the total interest you pay.`,
   },
   {
     question: "What is hypothecation and when is it removed?",
     answer:
-      "Hypothecation records the lender's claim on the vehicle in the RC. It stays until the loan is fully repaid, after which the lender issues a no-objection certificate and the RTO removes the endorsement. Never buy a vehicle with an active hypothecation unless the seller produces the lender's NOC.",
+      "Hypothecation records the lender's claim on the truck in the RC. It stays until the loan is fully repaid, after which the lender issues a no-objection certificate and the RTO removes the endorsement. Never buy a truck with an active hypothecation unless the seller produces the lender's NOC.",
   },
   {
     question: "Does TruckMitr Exchange lend money?",
@@ -126,10 +126,10 @@ export default async function FinancePage(props: PageProps<"/finance">) {
 
         <div className="mt-4 mb-8">
           <h1 className="font-display text-2xl font-extrabold text-steel-900 sm:text-3xl">
-            Commercial vehicle finance
+            Commercial truck finance
           </h1>
           <p className="mt-2 max-w-3xl text-sm text-pretty text-steel-600 sm:text-base">
-            Work out what a vehicle actually costs per month before you make an
+            Work out what a truck actually costs per month before you make an
             offer. Adjust the down payment, rate and tenure to see how the EMI
             and total interest move.
           </p>
@@ -201,7 +201,7 @@ export default async function FinancePage(props: PageProps<"/finance">) {
               </dl>
 
               <Button asChild size="lg" className="mt-7">
-                <Link href="/vehicles">Find a vehicle to finance</Link>
+                <Link href="/vehicles">Find a truck to finance</Link>
               </Button>
             </div>
 

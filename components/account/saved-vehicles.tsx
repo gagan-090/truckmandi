@@ -34,7 +34,7 @@ export function SavedVehicles() {
   if (error) {
     return (
       <ErrorState
-        title="Could not load your saved vehicles"
+        title="Could not load your saved trucks"
         description="Your shortlist is safe — we just could not reach the catalogue. Please try again."
         action={
           <Button onClick={() => window.location.reload()}>Try again</Button>
@@ -47,18 +47,18 @@ export function SavedVehicles() {
     return (
       <EmptyState
         icon={<HeartOff />}
-        title="No saved vehicles yet"
+        title="No saved trucks yet"
         description="Tap the heart on any listing to keep it here. We will tell you if the price drops."
         action={
           <Button asChild>
-            <Link href="/vehicles">Browse vehicles</Link>
+            <Link href="/vehicles">Browse trucks</Link>
           </Button>
         }
       />
     );
   }
 
-  // A saved vehicle can be delisted after it sells; say so rather than
+  // A saved truck can be delisted after it sells; say so rather than
   // quietly showing a shorter list than the counter promised.
   const missing = ids.length - vehicles.length;
 
@@ -69,7 +69,7 @@ export function SavedVehicles() {
           <span className="tabular font-semibold text-steel-900">
             {vehicles.length}
           </span>{" "}
-          {vehicles.length === 1 ? "vehicle" : "vehicles"} saved
+          {vehicles.length === 1 ? "truck" : "trucks"} saved
         </p>
         <Button variant="link" size="xs" onClick={clear}>
           Clear all
@@ -78,7 +78,7 @@ export function SavedVehicles() {
 
       {missing > 0 && (
         <p className="mb-4 rounded-md border border-amber-200 bg-amber-50 px-3.5 py-2.5 text-xs text-amber-900">
-          {missing} saved {missing === 1 ? "vehicle is" : "vehicles are"} no
+          {missing} saved {missing === 1 ? "truck is" : "trucks are"} no
           longer listed. They were most likely sold or withdrawn by the seller.
         </p>
       )}

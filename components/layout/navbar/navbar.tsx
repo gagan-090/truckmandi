@@ -31,7 +31,7 @@ export function Navbar() {
         <NavLinks />
 
         <div className="ml-auto hidden min-w-0 flex-1 justify-end xl:flex">
-          <SearchBar className="max-w-xs" placeholder="Search vehicles" />
+          <SearchBar className="max-w-xs" placeholder="Search trucks" />
         </div>
 
         <div className="ml-auto flex items-center gap-2 xl:ml-0">
@@ -46,7 +46,7 @@ export function Navbar() {
             size="sm"
             className="ml-1.5 hidden lg:inline-flex"
           >
-            <Link href="/sell">Sell your vehicle</Link>
+            <Link href="/sell">Sell your truck</Link>
           </Button>
 
           <MobileMenu />

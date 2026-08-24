@@ -21,7 +21,7 @@ import { Logo } from "@/components/layout/logo";
 
 const adminNav = [
   { href: "/admin", label: "Dashboard", icon: LayoutDashboard },
-  { href: "/admin/vehicles", label: "Vehicles", icon: Truck },
+  { href: "/admin/vehicles", label: "Trucks", icon: Truck },
   { href: "/admin/vehicles/new", label: "Add Truck", icon: PlusCircle },
   { href: "/admin/users", label: "Users", icon: Users },
   { href: "/admin/inquiries", label: "Enquiries", icon: MessageSquare },

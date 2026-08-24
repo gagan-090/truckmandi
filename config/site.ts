@@ -1,9 +1,9 @@
 export const siteConfig = {
   name: "TruckMitr Exchange",
   shortName: "TruckMitr",
-  tagline: "The modern Indian marketplace for commercial vehicles",
+  tagline: "The modern Indian marketplace for commercial trucks",
   description:
-    "Buy and sell used trucks, pickups, tippers, tankers, buses and construction vehicles across India. Verified listings, inspected vehicles, transparent pricing and finance in one place.",
+    "Buy and sell used trucks, pickups, tippers, tankers, buses and construction trucks across India. Verified listings, inspected trucks, transparent pricing and finance in one place.",
   url: process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000",
   locale: "en_IN",
   contact: {
@@ -11,7 +11,7 @@ export const siteConfig = {
     phoneHref: "tel:+919810045500",
     email: "support@truckmitr.com",
     whatsapp: "+919810045500",
-    address: "4th Floor, Emerald Plaza, Sector 65, Gurugram, Haryana 122018",
+    address: "Suite No. 201, Plot No. C-104, Sector 65, Noida, Uttar Pradesh 201301",
   },
   social: {
     twitter: "@truckmitr",

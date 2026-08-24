@@ -57,7 +57,7 @@ export function VehicleTypeStepForm() {
       <div className="space-y-6">
         <fieldset>
           <legend className="mb-2.5 text-sm font-medium text-steel-800">
-            Vehicle category
+            Truck category
             <span aria-hidden className="ml-0.5 text-brand-600">
               *
             </span>

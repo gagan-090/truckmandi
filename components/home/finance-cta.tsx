@@ -5,7 +5,7 @@ import { PageContainer, Section } from "@/components/layout/page-container";
 import { FINANCE_DEFAULTS } from "@/config/constants";
 
 const benefits = [
-  "Loans up to 90% of vehicle value",
+  "Loans up to 90% of truck value",
   "Tenure from 12 to 84 months",
   "Approval in as little as 48 hours",
   "Works for first-time buyers and fleet operators",
@@ -19,14 +19,14 @@ export function FinanceCta() {
           <div className="grid gap-8 p-6 sm:p-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] lg:items-center lg:gap-14 lg:p-12">
             <div>
               <p className="text-xs font-bold tracking-[0.12em] text-brand-700 uppercase">
-                Commercial vehicle finance
+                Commercial truck finance
               </p>
               <h2 className="mt-3 font-display text-2xl leading-tight font-extrabold text-balance text-steel-900 sm:text-3xl">
                 Know your EMI before you make an offer
               </h2>
               <p className="mt-3 max-w-lg text-pretty text-steel-600">
                 Compare interest rates from banks and NBFCs that lend against
-                commercial vehicles, and see exactly what a vehicle costs per
+                commercial trucks, and see exactly what a truck costs per
                 month before you commit.
               </p>
 
@@ -82,7 +82,7 @@ export function FinanceCta() {
                 </div>
               </dl>
               <p className="mt-5 text-xs leading-relaxed text-steel-500">
-                Rates are indicative and vary by lender, vehicle age and credit
+                Rates are indicative and vary by lender, truck age and credit
                 profile. Final terms are set by the lender.
               </p>
             </div>

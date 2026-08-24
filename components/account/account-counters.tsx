@@ -21,7 +21,7 @@ export function AccountCounters() {
   return (
     <dl className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
       <div className="rounded-lg border border-steel-200 bg-white px-4 py-3.5">
-        <dt className="text-xs text-steel-500">Saved vehicles</dt>
+        <dt className="text-xs text-steel-500">Saved trucks</dt>
         <dd className="tabular mt-0.5 font-display text-xl font-extrabold text-steel-900">
           {favorites.count}
         </dd>

@@ -23,7 +23,7 @@ export function TrustStats({
     {
       icon: Truck,
       value: formatNumber(totalListings),
-      label: "Vehicles listed",
+      label: "Trucks listed",
     },
     {
       icon: BadgeCheck,

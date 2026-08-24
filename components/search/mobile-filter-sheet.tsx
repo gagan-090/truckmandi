@@ -78,7 +78,7 @@ export function MobileFilterSheet({
         <SheetFooter>
           <Button block size="lg" onClick={() => setOpen(false)}>
             Show {formatNumber(resultCount)}{" "}
-            {resultCount === 1 ? "vehicle" : "vehicles"}
+            {resultCount === 1 ? "truck" : "trucks"}
           </Button>
         </SheetFooter>
       </SheetContent>

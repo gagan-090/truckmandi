@@ -10,15 +10,15 @@ import { breadcrumbSchema } from "@/lib/seo/structured-data";
 import { formatNumber } from "@/lib/utils/format-number";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Used Commercial Vehicles for Sale in India",
+  title: "Used Commercial Trucks for Sale in India",
   description:
-    "Browse verified used trucks, pickups, tippers, tankers, buses and construction vehicles across India. Filter by brand, budget, year, kilometres, GVW and location.",
+    "Browse verified used trucks, pickups, tippers, tankers, buses and construction trucks across India. Filter by brand, budget, year, kilometres, GVW and location.",
   path: "/vehicles",
 });
 
 const breadcrumbs = [
   { name: "Home", href: "/" },
-  { name: "Vehicles", href: "/vehicles" },
+  { name: "Trucks", href: "/vehicles" },
 ];
 
 export default async function VehiclesPage(props: PageProps<"/vehicles">) {
@@ -32,10 +32,10 @@ export default async function VehiclesPage(props: PageProps<"/vehicles">) {
 
       <div className="mt-4 mb-6 lg:mb-8">
         <h1 className="font-display text-2xl font-extrabold text-steel-900 sm:text-3xl">
-          Used commercial vehicles
+          Used commercial trucks
         </h1>
         <p className="mt-2 max-w-3xl text-sm text-pretty text-steel-600 sm:text-base">
-          {formatNumber(result.page.total)} vehicles matching your search, from
+          {formatNumber(result.page.total)} trucks matching your search, from
           individual owners, fleet operators and verified dealers across India.
         </p>
       </div>

@@ -18,7 +18,7 @@ export function SimilarVehicles({
     >
       <SectionHeading
         as="h2"
-        title={<span id="similar-heading">Similar vehicles</span>}
+        title={<span id="similar-heading">Similar trucks</span>}
         description="Comparable listings in the same category and price band."
         action={{ label: "See more", href: categoryHref }}
       />

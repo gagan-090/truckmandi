@@ -56,6 +56,40 @@ export function MobileMenu() {
                 item.href === "/"
                   ? pathname === "/"
                   : pathname.startsWith(item.href);
+
+              if (item.label === "Buy Trucks") {
+                return (
+                  <div key={item.href} className="space-y-1">
+                    <Link
+                      href={item.href}
+                      aria-current={active ? "page" : undefined}
+                      className={cn(
+                        "flex min-h-12 items-center rounded-md px-3 text-base font-semibold transition-colors",
+                        active
+                          ? "bg-brand-50 text-brand-700"
+                          : "text-steel-800 hover:bg-steel-100",
+                      )}
+                    >
+                      {item.label}
+                    </Link>
+                    <div className="ml-4 space-y-1 border-l-2 border-brand-100 pl-3">
+                      <Link
+                        href="/vehicles?condition=used"
+                        className="flex min-h-9 items-center text-sm font-medium text-steel-700 hover:text-brand-600"
+                      >
+                        • Used Trucks
+                      </Link>
+                      <Link
+                        href="/vehicles?condition=new"
+                        className="flex min-h-9 items-center text-sm font-medium text-steel-700 hover:text-brand-600"
+                      >
+                        • New Trucks
+                      </Link>
+                    </div>
+                  </div>
+                );
+              }
+
               return (
                 <Link
                   key={item.href}
@@ -92,7 +126,7 @@ export function MobileMenu() {
 
         <SheetFooter className="space-y-3">
           <Button asChild variant="accent" size="lg" block>
-            <Link href="/sell">Sell your vehicle</Link>
+            <Link href="/sell">Sell your truck</Link>
           </Button>
           <a
             href={siteConfig.contact.phoneHref}

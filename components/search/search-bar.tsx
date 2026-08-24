@@ -70,7 +70,7 @@ export function SearchBar({
       className={cn("relative flex w-full items-center", className)}
     >
       <label htmlFor={inputId} className="sr-only">
-        Search commercial vehicles
+        Search commercial trucks
       </label>
       <Search
         aria-hidden

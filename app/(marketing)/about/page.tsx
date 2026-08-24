@@ -16,7 +16,7 @@ import { formatNumber } from "@/lib/utils/format-number";
 export const metadata: Metadata = buildMetadata({
   title: "About TruckMitr Exchange",
   description:
-    "Why we built a commercial vehicle marketplace around verified documents, physical inspection and transparent pricing.",
+    "Why we built a commercial truck marketplace around verified documents, physical inspection and transparent pricing.",
   path: "/about",
 });
 
@@ -29,12 +29,12 @@ const principles = [
   {
     icon: ScanSearch,
     title: "Inspection before listing",
-    body: "Our engineers physically inspect vehicles and publish the score. A 68 is published exactly as readily as a 95 — buyers deserve the real number.",
+    body: "Our engineers physically inspect trucks and publish the score. A 68 is published exactly as readily as a 95 — buyers deserve the real number.",
   },
   {
     icon: BadgeCheck,
     title: "Documents, verified",
-    body: "RC, insurance, fitness and permit are checked against the vehicle before a listing earns the verified badge. Unverified listings say so plainly.",
+    body: "RC, insurance, fitness and permit are checked against the truck before a listing earns the verified badge. Unverified listings say so plainly.",
   },
   {
     icon: HandCoins,
@@ -44,7 +44,7 @@ const principles = [
   {
     icon: Users,
     title: "Built for operators",
-    body: "Filters for GVW, payload, axle configuration and emission norm, because that is how people who move freight for a living actually choose a vehicle.",
+    body: "Filters for GVW, payload, axle configuration and emission norm, because that is how people who move freight for a living actually choose a truck.",
   },
 ];
 
@@ -64,19 +64,19 @@ export default async function AboutPage() {
               About us
             </p>
             <h1 className="mt-3 font-display text-3xl leading-tight font-extrabold text-balance text-steel-900 sm:text-4xl">
-              Buying a used commercial vehicle should not be a gamble
+              Buying a used commercial truck should not be a gamble
             </h1>
             <div className="mt-6 space-y-4 text-lg leading-relaxed text-pretty text-steel-600">
               <p>
                 A truck is usually the largest single purchase a small transport
                 business makes, and until recently the market ran on word of
                 mouth, brokers and trust you had no way to verify. A wrong
-                decision does not just cost money — it takes a vehicle off the
+                decision does not just cost money — it takes a truck off the
                 road and a business off its contracts.
               </p>
               <p>
                 {siteConfig.name} exists to put the information a buyer needs in
-                front of them before they travel to see a vehicle: real
+                front of them before they travel to see a truck: real
                 photographs, honest kilometres, documented ownership history and
                 an inspection carried out by someone with no stake in the sale.
               </p>
@@ -87,7 +87,7 @@ export default async function AboutPage() {
             {[
               {
                 value: formatNumber(stats.totalListings),
-                label: "Vehicles listed",
+                label: "Trucks listed",
               },
               {
                 value: formatNumber(stats.verifiedListings),
@@ -145,12 +145,12 @@ export default async function AboutPage() {
               Ready to buy or sell?
             </h2>
             <p className="mx-auto mt-3 max-w-xl text-pretty text-steel-300">
-              Browse verified commercial vehicles across India, or list yours
+              Browse verified commercial trucks across India, or list yours
               free and reach buyers who are searching your category today.
             </p>
             <div className="mt-7 flex flex-wrap justify-center gap-3">
               <Button asChild variant="accent" size="lg">
-                <Link href="/vehicles">Browse vehicles</Link>
+                <Link href="/vehicles">Browse trucks</Link>
               </Button>
               <Button
                 asChild
@@ -158,7 +158,7 @@ export default async function AboutPage() {
                 size="lg"
                 className="border-white/20 bg-white/5 text-white hover:border-white/30 hover:bg-white/10"
               >
-                <Link href="/sell">Sell your vehicle</Link>
+                <Link href="/sell">Sell your truck</Link>
               </Button>
             </div>
           </div>

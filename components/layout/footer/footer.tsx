@@ -20,7 +20,7 @@ export function Footer() {
           <div className="max-w-sm">
             <Logo tone="light" />
             <p className="mt-4 text-sm leading-relaxed text-steel-400">
-              {siteConfig.tagline}. Verified listings, inspected vehicles and
+              {siteConfig.tagline}. Verified listings, inspected trucks and
               transparent pricing for buyers, sellers and dealers across India.
             </p>
 

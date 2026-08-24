@@ -21,7 +21,7 @@ export function SellHero() {
             Sell on TruckMitr Exchange
           </p>
           <h1 className="mt-3 font-display text-3xl leading-tight font-extrabold text-balance text-white sm:text-4xl lg:text-5xl">
-            Sell your commercial vehicle to buyers who are actually looking
+            Sell your commercial truck to buyers who are actually looking
           </h1>
           <p className="mt-5 max-w-xl text-base text-pretty text-steel-300 sm:text-lg">
             List a truck, pickup, tipper, tanker or bus in about five minutes.
@@ -42,7 +42,7 @@ export function SellHero() {
               size="lg"
               className="border-white/20 bg-white/5 text-white hover:border-white/30 hover:bg-white/10"
             >
-              <Link href="/vehicles">See what similar vehicles sell for</Link>
+              <Link href="/vehicles">See what similar trucks sell for</Link>
             </Button>
           </div>
 

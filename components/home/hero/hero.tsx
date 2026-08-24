@@ -10,7 +10,7 @@ import { MarketplaceSearch } from "./marketplace-search";
 
 const assurances = [
   { icon: BadgeCheck, label: "Verified sellers" },
-  { icon: Wrench, label: "Inspected vehicles" },
+  { icon: Wrench, label: "Inspected trucks" },
   { icon: ShieldCheck, label: "Documents checked" },
 ];
 
@@ -89,7 +89,7 @@ export function Hero({ totalListings, cities }: HeroProps) {
           </p>
 
           <h1 className="mt-5 font-display text-4xl leading-[1.08] font-extrabold tracking-tight text-balance text-white sm:text-5xl lg:text-[3.5rem] drop-shadow-md">
-            India&rsquo;s commercial vehicle marketplace,{" "}
+            India&rsquo;s commercial truck marketplace,{" "}
             <span className="text-brand-400 underline decoration-brand-500/50 underline-offset-4">built on trust</span>
           </h1>
 
@@ -120,7 +120,7 @@ export function Hero({ totalListings, cities }: HeroProps) {
               href="/sell"
               className="group inline-flex items-center gap-2 rounded-lg bg-brand-600 px-4 py-2.5 text-sm font-bold text-white shadow-md transition-all hover:bg-brand-500 hover:shadow-lg"
             >
-              Sell your vehicle free
+              Sell your truck free
               <ArrowRight className="size-4 transition-transform duration-200 group-hover:translate-x-1" />
             </Link>
             <Link
