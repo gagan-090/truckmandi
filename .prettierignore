@@ -1,0 +1,8 @@
+.next
+node_modules
+package-lock.json
+public
+coverage
+
+# The Laravel API is a separate project with its own tooling.
+backend
